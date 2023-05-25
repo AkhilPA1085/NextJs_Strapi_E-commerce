@@ -7,6 +7,8 @@ const Button = ({ children, type, onClick }) => {
     buttonStyles = "bg-blue text-white";
   } else if (type === "outlined") {
     buttonStyles = "bg-transparent text-blue";
+  } else if (type === "white-filled") {
+    buttonStyles = "bg-white text-blue";
   }
   return (
     <button

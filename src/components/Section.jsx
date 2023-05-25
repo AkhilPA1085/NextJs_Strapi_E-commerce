@@ -11,7 +11,7 @@ const Section = () => {
     }
   return (
     <ContentWrapper>
-      <div className="grid md:grid-cols-2 gap-4 py-24">
+      <div className="grid md:grid-cols-2 gap-4">
         <Image height={500} width={500} src="/home image 1.jpg" />
         <div className="text-content">
           <h6 className="text-black text-lg font-medium uppercase tracking-wide">

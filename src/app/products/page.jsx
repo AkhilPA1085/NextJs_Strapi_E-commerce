@@ -1,10 +1,10 @@
-import Link from 'next/link'
+import CardsSection from '@/components/CardsSection'
 import React from 'react'
 
 const page = () => {
   return (
     <>
-      products
+      <CardsSection/>
     </>
   )
 }
