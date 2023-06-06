@@ -1,11 +1,19 @@
+'use client';
 import CardsSection from '@/components/CardsSection'
-import React from 'react'
+import { getServices } from '@/utils/api';
+import { usePathname } from 'next/navigation';
+import {use} from "react"
 
-const Services = () => {
+const Services = async() => {
+  const pathname = usePathname();
+  const services = await getServices();
+  
   return (
-    <div>
-      <CardsSection/>
-    </div>
+    <>
+      {services && 
+        <CardsSection type="services" data={services} pathname={pathname}/>
+      }
+    </>
   )
 }
 

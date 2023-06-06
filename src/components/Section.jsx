@@ -12,7 +12,7 @@ const Section = () => {
   return (
     <ContentWrapper>
       <div className="grid md:grid-cols-2 gap-4">
-        <Image height={500} width={500} src="/home image 1.jpg" />
+        <Image height={500} width={500} src="/home image 1.jpg" alt="section-image"/>
         <div className="text-content">
           <h6 className="text-black text-lg font-medium uppercase tracking-wide">
             Hydraulics Company WLLC
@@ -20,7 +20,7 @@ const Section = () => {
           <h1 className="text-blue font-bold text-4xl mb-4">
             Pioneers In Hydraulics & Pneumatics In Bahrain.
           </h1>
-          <p className="text-black text-base">
+          <p className="text-black text-base mb-5">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo minima
             provident deserunt perferendis dolorum recusandae magni adipisci
             repellendus quas, nihil voluptates ipsam ipsa illo dicta nobis fuga!

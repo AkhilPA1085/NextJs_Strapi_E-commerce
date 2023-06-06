@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 
-const Button = ({ children, type, onClick }) => {
+const Button = ({ children, type, onClick,className }) => {
   let buttonStyles;
   if (type === "filled") {
     buttonStyles = "bg-blue text-white";
@@ -12,7 +12,7 @@ const Button = ({ children, type, onClick }) => {
   }
   return (
     <button
-      className={`py-2 px-4 rounded w-fit uppercase border-2 border-blue ${buttonStyles}`}
+      className={`py-2 px-4 rounded w-fit uppercase border-2 border-blue ${buttonStyles} ${className}`}
       onClick = {onClick}
     >
       {children}
